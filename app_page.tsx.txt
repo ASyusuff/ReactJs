@@ -1,0 +1,50 @@
+import Image from 'next/image'
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+
+export default function Home() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
+        <h1 className="text-4xl font-bold mb-8 text-center">Ahmad Syarifudin Yusuf</h1>
+        
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle>Profil Siswa</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p><strong>Nama:</strong> Ahmad Syarifudin Yusuf</p>
+            <p><strong>Sekolah:</strong> SMKN 1 DOKO</p>
+            <p><strong>Jurusan:</strong> Teknik Komputer dan Jaringan Telekomunikasi (TKJT)</p>
+          </CardContent>
+        </Card>
+
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle>Keterampilan</CardTitle>
+          </CardHeader>
+          <CardContent className="flex flex-wrap gap-2">
+            <Badge>Jaringan Komputer</Badge>
+            <Badge>Pemrograman Web</Badge>
+            <Badge>Troubleshooting</Badge>
+            <Badge>Administrasi Server</Badge>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Tentang Saya</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>
+              Saya adalah seorang siswa yang bersemangat dalam mempelajari Teknik Komputer dan Jaringan Telekomunikasi. 
+              Saya memiliki minat khusus dalam pengembangan web dan administrasi jaringan. 
+              Saya selalu berusaha untuk meningkatkan keterampilan saya dan mengikuti perkembangan teknologi terbaru.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </main>
+  )
+}
+
